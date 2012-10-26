@@ -25,10 +25,34 @@ Features
 Usage
 -----
 
+Simple call that retrieves a remote xml file and transforms it using cds.xsl template into a element on the page with id of 'result'   
+
     $("div#result").transform({
         xml:"xml/catalog.xml",
         xsl:"xsl/cds.xsl"
     });
+
+Full list of input options:
+
+    $.tranform({
+        el: null,
+        cache : false,
+        async : true,
+        xsl : null,
+        xml : null,
+        xslstr : null,
+        xmlstr : null,
+        xslobj : null,
+        xmlobj : null,
+        xslParams : null,
+        error : null,
+        success : null,
+        complete : null,
+        island : false,
+        pass : null,
+        msg : null,
+        dataType : "html"
+    })
 
 
 Options
@@ -69,7 +93,7 @@ All properties below can be passed in the transform config object.
 -   **xsl**         :   *String. Optional|Required. Default=null* <br />
                         URL to xsl file. Required if xslstr and xslobj are not used. An Ajax object can be used to set custom Ajax callbacks, post, etc. Required if xslstr and xslobj are not used.
 -   **dataType**    :   *String. Optional. Default="html"* <br />
-                        Return type for transformation result. Can be "json" or "xml"
+                        Return type for transformation result. Default is to return html. Can be "json" or "xml"
 
 
 Versions
@@ -86,7 +110,7 @@ jstosite - A relative path from the javascript file to your site.
 About the Author
 ----------------
 
-This library was developed by Jason Iles of daersystems.com. The site no longer exists and I received permission from the author to create this github repository for it so that it may encourage the comminity to use it and maintain it.  I'm currently a heavy user of this library in my workings with Sharepoint webservices, thus the interest in continuing support for it.
+This library was developed by Jason Iles of daersystems.com. The site no longer exists and I received permission from the author to create this github repository for it so that it may encourage the community to use it and maintain it.  I'm currently a heavy user of this library in my workings with Sharepoint webservices, thus the interest in continuing support for it.
 
 The original pages for this plugin can still be seen on archive.org ([here](http://web.archive.org/web/20100815004711/http://daersystems.com/jquerytransform.asp)).
 
