@@ -3,7 +3,7 @@ jquery.transform
 
 A jQuery plugin which provides an easy way for users to perform cross-browser XML transformations with XSL templates.
 
-**(CLICK HERE FULLL DOCUMENTATION)[doc/documentation.md]**
+**(CLICK HERE FULLL DOCUMENTATION)[https://github.com/purtuga/jquery.transform/blob/master/doc/documentation.md]**
 
 
 
